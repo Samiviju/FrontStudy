@@ -1,0 +1,87 @@
+get= Obter
+set= Definir - 
+exemplos:
+public int Numero { get; }
+public int Agencia { get; }
+------------------------------
+value = valor
+exemplos:
+	set
+            {
+                if (value < 0)
+                {
+                    return;
+                }
+
+                _saldo = value;
+            }
+-------------------------------------
+
+
+encapusulamento:Encapsular os dados de uma aplicação significa evitar que estes sofram acessos indevidos. Para isso, é criada uma estrutura que contém métodos que podem ser utilizados por qualquer outra classe, sem causar inconsistências no desenvolvimento de um código.
+
+
+base: base é usada para acessar membros de classe base de dentro de uma classe derivada
+
+
+virtual/override= serve para usar um metodo na herança filha, ou seja poder fazer alterações dentro de uma classe filha;
+
+protect = serve para usar para os tipos derivados, ele é protegido dentro da classe e do seus filhos.
+
+abstract = abstract em uma declaração de classe para indicar que uma classe se destina somente a ser uma classe base de outras classes, não instanciada por conta própria.
+
+Static = é um modificador cujas características tornam o programa restrito a algumas situações. 
+
+This/isto = é usado quando queremos chamar algo dentro de uma classe
+
+
+
+
+SistemaInterno que acessivel pelo diretor e o GerenteDeContas. Autenticar
+	logar(funcionario e a senhaTentativa)
+
+interface	
+
+
+Try/catch = tratação de erros
+Como funciona a pilha de chamadas (CallStack) no .NET;
+Propagar erros com retorno de métodos não é correto;
+Podemos usar as exceções do .NET;
+Para tratar exceções do .NET, basta usar os blocos try/catch;
+As exceções são representadas por objetos e duas propriedades importantes são a Message e StackTrace.
+
+throw/lançar = lançando excessão / controle de fluxo 
+
+readonly = somente leitura/não pode ser definido, só lido, não compila !
+pilhas de chamadas
+
+ParamName = Obtem o nome do parametro que causa essa excessão!
+
+nameof(nomede) = Uma nameof expressão produz o nome de uma variável, tipo ou membro como a constante de cadeia de caracteres:
+-------------------------------------------------------------------
+
+
+
+
+Campos somente leitura com o modificador readonly;
+Propriedades somente leitura, com omissão do setter;
+O operador nameof();
+A classe de exceção ArgumentException, seus construtores e propriedades;
+
+
+CRIANDO EXCEÇÕES 
+
+
+Nessa aula, aprendemos:
+
+O bloco finally;
+Não é obrigatório o bloco catch quando temos um finally;
+Como é usado o bloco using e como ele funciona;
+A interface IDisposable.
+
+
+DataTime = Mexendo com datas
+TimeSpan = Operações
+
+manipulando strings
+comandos = Substrings = Recupera uma subcadeia de caracteres desta instância.

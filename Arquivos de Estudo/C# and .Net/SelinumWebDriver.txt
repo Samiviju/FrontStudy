@@ -1,0 +1,61 @@
+Selinium WebDriver e C# part 1
+
+Primeiramente devemos baixar o pacote Selenium no Nuget
+Depois baixar o Selenium.ChromeDriver
+
+namespace do Selinium = using OpenQA.Selenium;
+
+Interface Selinium
+-IWebdriver
+
+Conceitos de testes
+UI tests =  Teste de Interface do usuario. Onde que a aplicação precisa está publicada, para poder fazer o teste.
+ponto de vista é do usuário final.
+ 
+Depedencias do UI = banco de dados, dados de rede, navegadores, etc.
+
+Nomenclatura e ajudantes;
+
+O objeto Navigate() = serve para poder navegar dentro de uma url sugerida, junto com ela vem 
+o metodo GoToUrl(), que vem como argumento o nome do da Url.
+
+Testando o titulo= quando queremos testar o titulo da pagina, para sim ver se esta tudo correto
+devemos usar o Assert.Contains("nome da pagina", x.Title);
+
+Usamos a "x".PageSource para verificar se o nome da pagina esta certa.
+
+Criando uma classe para poder buscar a pasta executavel do navegador;
+
+Usamos o using IO e Reflection
+A syntax é 
+		public static string "NomeDoMetodo" => Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)
+
+
+Gerenciando o Navegador
+		Para não ficar abrindo muitos navegadores para cada teste, usamos o TearDown,
+		implementando na interface IDisposable  usamos o metodo Disposable para poder fechar o navegador depois de cada teste.
+		Usando o drive.Quit();
+		
+		Compartilhando recursos
+		Usamos o IClassFixtures para poder diminuir o tempo de execussão de testes. Recurso compartilhado por testes da mesma classe Class Fixture
+		Collection Fixture = Recurso compartilhado por testes de várias classes
+	
+
+Testando Registros.
+
+Obtendo dados do registro
+-Interagindo com elementos de uma pagina html
+capturando dados do html = declarar uma variavel input, depois colocar o nome do campo WebDriver que definiu,
+junto com .FindElement(By.Id("nome do elemento HTML"); Onde o FindElement pega elementos do html.
+
+-Colocando um valor dentro de uma ID, passando valores validas para elementos. = "nome da variavel".SendKeys();
+	
+
+Mensagem De Erro.
+Capturar uma mensagem booleana usando o metodo Displayed() que fica dentro da interface IWebElement.
+
+Como capturar um elemento sem o id? Inves de usarmos o .FindElement(By.Id), usamos o .FindElement(By.CssSelector);
+	
+	
+
+

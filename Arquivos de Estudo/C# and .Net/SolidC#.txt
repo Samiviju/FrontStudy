@@ -1,0 +1,75 @@
+Solid Com c#
+O que é um código de qualidade ?
+R: É um código que é flexível diante aos desenvolvedores.Que fica pronto para mudanças.
+
+Code Smells = Cheiros de problemas do nosso codigos. Indentificar problemas
+.Tirar Codigos repetidos 
+
+Ajuda de experiência de outros devs.
+
+																			Coesão-Ligação, Harmonia, União entre as partes.		
+																	
+Metodo que Retorna Categorias:
+IEnumerable<Categoria>											
+
+ira retornar categorias.
+
+DAO = DataAccessObject = é o objeto principal desse padrão.
+O Data Access Object abstrai a implementação fundamental de acesso a dados para o Business Onjects
+para permitir acesso transparente à fonte de dados. Classes que são responsaveis ao acesso aos dados.	
+
+Dry = Dont Repeat yourself. = não repetir codigos. 
+
+Actions não devem ser responsaveis para fazer o uso dos dados
+Quem deve fazer isso são os métodos. Eles devem ter uma única responsabilidade.
+
+Classes também devem ter uma única responsabilidade.
+
+Single Source Of Truth = Prática de estruturar modelos de informações e esquema de dados associado
+de modo que todo elemnto de dados seja dominado em apenas eum local. Quaisquer ligações possíveis,
+para esse elementos de dados são apenas por refência.
+
+								
+
+S. = Single Responsibility Principle = SRP = Auto coesão e ter métodos e classes com responsabilidade única.
+O.pen/Closed Principle = Mantem sua aplicação fechada por mudanças e abertas para extensões.
+L.iskov Substituition Principle = Se voce esta herdando, voce precisa comprir todas as promessas definidas la nos ancestrais.
+I.nterface Segregation Principle = Criar interfaces bem granularis, mantem a flixibilidade do seu sistema 
+D.epedency inversion principle = preocupação da qualidade das depedencias.
+
+
+Acoplamento: existe acomplamentos que são bons e acomplamentos que são ruins .
+Acoplamento bom: É aquele que é instável, ou seja, dificilmente vai ser alterado.
+Injeção de dependências = É um padrão de projeto que visa a diminuição do acoplamento entre os diversas partes
+(ou módulos) de uma aplicação, tem como vantagens: a reutilização e manuntenção do código
+o código é testável e extensivo.
+
+Acomplamentos sempre irão existir, e devemos sempre preservar sua qualidade.
+Acoplamentos bons = tipos que são estaveis (API e abstrações)
+Acomplamentos ruins = tipos instáveis (ex.. implementações)
+					
+Crie abstrações para melhorar a qualidade.
+Explicite as dependências dentro do costrutor para desacoplar.
+
+Quando preoupamos com isso estamos falando de DIP, Depedency inversion principle
+
+						OCP = Open/Closed Principle
+						
+1= Código repetido é um risco para o negócio.
+2= Separa a suas funcionalidades da aplicação em uma camada de serviço.
+3= Crie o hábito de minimkizar a alteração de código pronto.
+	
+	
+
+Cumpra as promessas das abstrações
+YAGNI - You Aint Gonna Need it!	= não faça funções que você não irá usar depois, para sim fazer manuntenções futuras.
+
+Preocupe-se com a coesão a acoplamento das interfaces.
+
+Command Query Responsibility Segregation = 
+
+LSP = Se voce esta herdando, voce precisa comprir todas as promessas definidas la nos ancestrais.
+ISP = Criar interfaces bem granularis, mantem a flixibilidade do seu sistema 
+
+
+

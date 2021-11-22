@@ -1,0 +1,26 @@
+C# Testes de unidade e TDD com xUnit
+-Teste de software
+-Ver se aquilo está funcionando
+-Verificar se aquele software está atendendo os requisitos.
+-Teste automatizado, é quando substitui um trabalho humano para uma maquina.
+
+---Estrutura de testes automatizadas
+.Arrange = Cenário do teste.
+.Act = Método sob teste.
+.Assert = O ambiente que voce espera, o teste final.
+
+---Frameworks de Testes
+.A biblioteca xUnit.
+  Metodo para verificar se o teste falhou ou passou: Assert.Equals();
+=>Para poder fazer que o xUnit reconhecer seus testes usar anotação [Fact];
+=> Para poder simplificar os testes que fazem a mesma coisas usamos a anotação
+	[Theory] junto com o [InclineData] passando dentro dele argumentos que ele irá executar, argumentos dos testes. Dados.
+
+---Test Driven Develoment(TDD)
+		Uma pratica usando bastante em times ageis, que serve para fazer os testes primeiro e depois trabalhar em cima desses testes.
+
+Ciclo TDD:
+	NOVO TESTE => FALHA => CORRIGIR => SUCESSO => REFATORAR
+
+---Testando Excessões usando o xUnit.
+Comando para testar excessões: Assert.Throws

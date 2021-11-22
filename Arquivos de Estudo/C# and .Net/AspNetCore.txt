@@ -1,0 +1,66 @@
+Asp.Net Core
+Ciclos de Vida de Serviços= 
+AddTransient = gera uma instância temporaria, transitorios.
+AddScooped = A cada requisição vai criar uma instância dentro da mesma requisição da pagina "X".
+AddSingleton = Força a geração de uma instancia, uma instancia unica que vai existir em toda aplicação.
+
+Tipo de projeto MVC: ModelViewController
+
+Conhecendo a view:
+Controller = O que controla o site, recebe um requisição do browser que vai acionar uma ação. Irá retornar uma view para o browser.
+Modelo = São dados que usam para montar um site para retornar para o browser, junto com a view.
+
+A Página Carrosel: 
+
+Um contêiner é um ambiente virtual isolado onde rodam aplicações.
+Microsserviço é uma técnica de desenvolvimento de software onde a arquitetura da aplicação é formada por um conjunto de serviços independentes e desacoplados.
+
+Entity framework core = Faz o mapeamento, vai gerar o modelo de alguma classe, conectar ao banco de dados.
+
+Relacionamentos e Migrações: 
+
+
+Asp.Net Core #2
+
+Chamando Função JavaScript:
+Function MyFuction(){
+	sdasd
+	sdadsadsa
+}
+
+JQuerry = Uma biblioteca que é automaticamente instalada a partir de projeto AspNetCore.
+anatomia(syntax) de uma função jQuerry.
+
+$(seletor).action();
+funções:
+.parents = navegar para toda hierarquia a cima. (Ancestrais)
+.find = pegar elementos abaixo da hierarquia, localizar.
+.val = acessar um valor de um input.
+
+Ajax com jQuery que se faz = $.ajax 
+é uma função 
+O que significa Ajax?
+R = é uma sigla que significa Asynchronous JavaScript Xml, mas que se usa atualmente que é JSON
+para fazer uma requisição em jQuerry precisamos de 4 parametros :
+.url = o endereço do nosso método do controller
+.type: o tipo de requisição HTTP que escolhemos
+.contentType: o formato dos dados (Json)
+.data: o objjeto que vai levar os dados do clinte para o servidor.
+
+----------------------------
+metodo que indica que a chamada fez sucesso  chama "done"; ele recebe um parametro que é uma função que é a resposta do servidor, que é o "response"
+ficará assim .done(function(response){ => dentro desse bloco de codigo vamos colocar o refresh da determinada pagina.
+	location.reload => fazer a recarga da pagina.	
+
+})
+
+
+Metodo RedirectToAction = Retorna para a proxima action, passado pelo parametro definido 
+
+Colocando aviso ao usuario para preencher o formulario obrigado:
+<span asp-validation-for="xx" class="text-danger"></sapn>
+
+Atributo para define quantos caracteres o usuario deve preencher no formulario: MinLenght e MaxLenght junto com a propriedade de quantidades de caracteres e o erromensage.
+
+
+

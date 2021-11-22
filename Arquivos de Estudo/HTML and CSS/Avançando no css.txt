@@ -1,0 +1,63 @@
+Avançando no CSS
+
+-Quando temos um conteudo que é uma sessão, faz só uma coisa, no lugar da "div", colocamos <section></section>	
+
+.Usando o float:
+	-Quando queremos Como funciona a flutuação dos elementos e como modificá-la, com a propriedade float do CSS
+	Como limpar o float, com a propriedade clear do CSS
+
+Fontes externas:
+	.podemos usar fontes externas por esse site https://fonts.google.com/specimen/Montserrat
+	
+Trabalhando com mapas:
+	Para importa um mapa para o nosso website, usamos o google maps, onde tem uma opção que da para importa
+	um codigo html para colocar no nosso codigo
+	
+Importando video no html.
+		basicamente a mesma coisa com mapas importa para o html.
+		
+Pseudo Classes:
+	.Dentro do css temos pseudo elementos, como; hover:, active:, visited: required:
+		.Quando queremos um espaçamento entre as linhas, usamos no css a propriedade: line-height
+	.Usando pseudo elementos
+		-quando queremos deixa um elemento em negrito no css de forma pratíca, usamos o pseudo elemento first-child para colocar o primeiro elemento em negrito!
+		-com isso existe varias maneiras de trabalhar com "firts", exemplos: firts-last, que é para deixar o ultimo da lista em negrito
+																	.first-nth, que usado para definir um numero da lista para ficar em negrito, podemos fazer tambem com esse definir para deixar em negrito só numeros pares.
+
+
+Aplicando gradientes(degrade)
+	. Quando queremos fazer um gradiente que é a conexão de cores usamos a propriedade: backgroud: linear-gradient(cor1,cor2).
+	.Usamos os radial-gradient quando queremos fazer um circulo de cores.
+
+
+Seletores Avançados:	
+	.Quando queremos selecionar um parte do nosso html para editar no css montamos o elemento assim: main >p{}
+	.quando queremos fazer dentro de uma classe que tenha uma imagem, usamos;img+p{}
+	.Tabem quando queremos selecionar somente 2 e não pegar as outras usamos: img ~ p
+	.quando quremeos impedir que um use class ou indentificadores usamos o nome da classe + paragrafro
+		como p:not(#nome do indentificador)
+		
+
+Calculos no css:
+	.No css3 temos uma propriedade que podemos inserir no nosso projeto que é para calcular a largura do determinado elemento
+		usamos a propriedade "calc" e dentro dela colocamos  a propriedade que quisermos para nosso projeto.
+
+Opacidade nos elementos:
+  
+	.Opacidade é como se fosse colocada uma camada a mais no nosso elemento. Muda a opacidade daquele elemento	
+		-usamos a propriedade "opacity" podemos aumentar a opacidade usando porcentagem, exemplos: opacity: o.5 ou aumentar: opacity: 1;
+		
+	.Com essa propriedade podemos fazer muitas coisas legais no nosso website.
+
+Sombra nos elementos:
+	.Sombras no elemento
+		-para criarmos sombras no nosso elemento, usamos a propriedade "box-shadow: X Y (blur) Cor:"
+	.Podemos tambem colocar sombras em textos. Usando o text-shadow:	
+	
+Meta tag de viewport
+	.é uma tag que entrega a altura daquele site igual a alutura
+	
+Adaptdando uma pagina para celular:
+ .Design responsivo, refazendo o site para celulares
+	-usamos o @media screen and  para poder mudar os valores para dispositivos celulares.
+		

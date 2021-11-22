@@ -1,0 +1,71 @@
+Fluxo de dados = Enquanto eu recebo, mostro para o usuario. Tudo é byte.
+
+
+using System.IO; //IO = Input e Output
+ FileMode.Open = abrir o arquivo
+ 
+ 
+Code point
+
+Formato de transformação unicode 
+Unicode Transformation Format = UTF
+UTF - 8
+UTF - 16
+UTF - 32
+UTF - 34
+
+buffers
+
+
+StreamReader = Leitor de Stream
+
+Nessa aula, aprendemos:
+
+O modificador partial;
+O método Close de um stream;
+Como usar o StreamReader;
+Os métodos Read, ReadLine e ReadToEnd;
+		
+
+
+CSV é um formato de arquivo que significa “comma-separated-values”
+(valores separados por vírgulas). Isso significa que os campos de dados indicados neste formato normalmente são separados ou delimitados por uma vírgula.
+
+
+StreamReader = Classe para ler arquivos 
+StreamWriter = Classe para escrever arquivos
+-------------------------------------------------
+Nessa aula, aprendemos:
+
+Os métodos int.Parse e double.Parse;
+O formato de arquivo .csv;
+Como escrever diretamente no stream;
+Diferença entre FileMode.Create e FileMode.CreateNew;
+Como usar o StreamWriter
+------------------------------------------------------
+Método Flush = Despeja o buffer para o Stream 
+Arquivo de log = Arquivo que fala o que a aplicação está fazendo 
+Buffer: fornece métodos para copiar bytes de uma matriz de tipos primitivos para outra matriz de tipos primitivos,
+obter um byte de uma matriz, definir um byte em uma matriz e obter o comprimento de uma matriz.
+BinaryWriter = É uma classe para retornar escrever palavras binarias no intput.
+
+
+Nessa aula, aprendemos:
+
+O método Flush;
+BinaryReader e BinaryWriter
+-------------------------------------------------------
+
+A classe File:Fornece métodos estáticos para a criação, cópia, exclusão, deslocamento e abertura de um arquivo, além de ajudar na criação de objetos.
+File.WriteAllText: Cria um novo arquivo, grava os conteúdos nele e o fecha. Se o arquivo de destino já existir, ele será substituído.
+File.ReadAllBytes: Abre um arquivo binário, lê o conteúdo do arquivo em uma matriz de bytes e, em seguida, fecha o arquivo.
+File.ReadAllLines: Abre um arquivo de texto, lê todas as linhas do arquivo em uma matriz de cadeia de caracteres e o fecha.
+
+
+Nessa aula, aprendemos:
+
+Como a Console funciona com streams;
+O método Console.OpenStandardInput();
+Métodos auxiliares na classe File;
+-----------------------------------------------------
+
